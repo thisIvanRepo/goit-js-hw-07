@@ -1,0 +1,20 @@
+.widget {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: fit-content;
+}
+
+.change-color {
+  max-width: 148px;
+  height: 40px;
+  border-radius: 8px;
+  background-color: rgba(78, 117, 255, 1);
+  color: rgba(255, 255, 255, 1);
+  font-size: 16px;
+}
+
+.change-color:hover {
+  background-color: rgba(108, 140, 255, 1);
+}
