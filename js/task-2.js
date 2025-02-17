@@ -25,10 +25,11 @@ const images = [
   },
 ];
 
-const listGallery = document.querySelector(".gallery");
+const listGallery = document.querySelector('.gallery');
 
-const itemsPhoto = images.map(image => {
-  return `<li class="gallery__item">
+const itemsPhoto = images
+  .map((image) => {
+    return `<li class="gallery__item">
             <img
               src="${image.url}"
               alt="${image.alt}"
@@ -37,7 +38,8 @@ const itemsPhoto = images.map(image => {
               height="300"
               >
           </li>`;
-}).join("");
+  })
+  .join('');
 
 // Insert the generated HTML into the gallery element.
 listGallery.innerHTML = itemsPhoto;
