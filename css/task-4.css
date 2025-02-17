@@ -1,0 +1,51 @@
+.html-4 {
+  --input-color: rgba(128, 128, 128, 1);
+  --input-hover: rgba(0, 0, 0, 1);
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+}
+
+.input__field {
+  display: flex;
+  flex-direction: column;
+  max-width: 360px;
+  padding-bottom: 16px;
+  gap: 8px;
+}
+
+.input__date {
+  height: 40px;
+  border: 1px solid var(--input-color);
+  border-radius: 4px;
+  padding-left: 16px;
+  outline: none;
+}
+
+.input__date:hover {
+  border-color: var(--input-hover);
+}
+
+.input__date:focus {
+  border-color: var(--input-color);
+}
+
+.input__field:nth-child(1) {
+  padding-bottom: 8px;
+}
+
+.btn {
+  max-width: 86px;
+  height: 40px;
+  border-radius: 8px;
+  background-color: rgba(78, 117, 255, 1);
+  color: rgba(255, 255, 255, 1);
+  font-size: 16px;
+}
+
+.btn:hover {
+  background-color: rgba(108, 140, 255, 1);
+}

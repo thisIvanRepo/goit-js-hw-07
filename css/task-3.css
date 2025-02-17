@@ -4,12 +4,12 @@
 }
 
 .input__name {
-  font-family: Montserrat;
   height: 40px;
   min-width: 360px;
   border-radius: 4px;
   border-width: 1px;
   letter-spacing: 0.04em;
+  border-radius: 4px;
 
   display: flex;
   padding-left: 16px;
@@ -24,8 +24,8 @@
 }
 
 .input__name:focus {
- outline: none;
- border-color: var(--focus-color);
+  outline: none;
+  border-color: var(--focus-color);
 }
 
 .input__name::placeholder {
@@ -33,9 +33,9 @@
 }
 
 .greeting__user {
+  font-family: Montserrat;
   padding-top: 16px;
   color: var(--main-color);
-  font-family: Montserrat;
   font-size: 24px;
   line-height: 32px;
 }
