@@ -24,3 +24,20 @@ const images = [
     alt: 'Zebras on Zebra',
   },
 ];
+
+const listGallery = document.querySelector(".gallery");
+
+const itemsPhoto = images.map(image => {
+  return `<li class="gallery__item">
+            <img
+              src="${image.url}"
+              alt="${image.alt}"
+              class="gallery__image"
+              width="360"
+              height="300"
+              >
+          </li>`;
+}).join("");
+
+// Insert the generated HTML into the gallery element.
+listGallery.innerHTML = itemsPhoto;
