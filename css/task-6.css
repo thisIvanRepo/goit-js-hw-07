@@ -1,0 +1,53 @@
+#controls {
+  display: flex;
+  gap: 16px;
+  background-color: rgba(246, 246, 254, 1);
+  padding: 32px;
+  max-width: fit-content;
+}
+
+#controls > button {
+  min-width: 120px;
+  min-height: 40px;
+  border-radius: 8px;
+  color: rgba(255, 255, 255, 1);
+  font-size: 16px;
+}
+
+#controls [data-create] {
+  background-color: rgba(78, 117, 255, 1);
+}
+
+#controls [data-create]:hover {
+  background-color: rgba(108, 140, 255, 1);
+}
+
+#controls [data-destroy] {
+  background-color: rgba(255, 78, 78, 1);
+}
+
+#controls [data-destroy]:hover {
+  background-color: rgba(255, 112, 112, 1);
+}
+
+#controls > input[type="number"] {
+  min-width: 150px;
+  border-radius: 8px;
+  border: 1px solid rgba(128, 128, 128, 1);
+  outline: none;
+  text-align: center;
+  font-size: 16px;
+  background-color: transparent;
+}
+
+#controls > input[type="number"]:hover,
+#controls > input[type="number"]:focus {
+  border-color: rgba(0, 0, 0, 1);
+}
+
+#boxes{
+  background-color: rgba(246, 246, 254, 1);
+  display: flex;
+  gap: 44px;
+}
+
