@@ -6,6 +6,7 @@ const destroyButton = document.querySelector("[data-destroy]");
 
 createButton.addEventListener("click", event => {
   const amount = imputedElement.value;
+  containerBoxes.style.padding = "32px";
   createBoxes(Number(amount));
   imputedElement.value = "";
 });
@@ -13,6 +14,7 @@ createButton.addEventListener("click", event => {
 destroyButton.addEventListener("click", event => {
   containerBoxes.innerHTML = "";
   imputedElement.value = "";
+  containerBoxes.style.padding = "";
 });
 
 function createBoxes(amount) {

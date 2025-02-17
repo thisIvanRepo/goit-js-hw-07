@@ -1,9 +1,12 @@
 #controls {
+  margin: auto;
+  margin-bottom: 16px;
   display: flex;
   gap: 16px;
   background-color: rgba(246, 246, 254, 1);
   padding: 32px;
   max-width: fit-content;
+  border-radius: 8px;
 }
 
 #controls > button {
@@ -46,8 +49,12 @@
 }
 
 #boxes{
+  margin: auto;
   background-color: rgba(246, 246, 254, 1);
   display: flex;
+  flex-wrap: wrap;
   gap: 44px;
+  border-radius: 8px;
+  width: fit-content;
 }
 
